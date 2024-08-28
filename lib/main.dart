@@ -1,4 +1,4 @@
-import 'package:cooking_guide/categories.dart';
+import 'package:cooking_guide/screens/categories.dart';
 import 'package:flutter/material.dart';
 
 void main() {

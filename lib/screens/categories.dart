@@ -1,6 +1,6 @@
 import 'package:cooking_guide/widgets/category_grid_item.dart';
 import 'package:flutter/material.dart';
-import 'data/data_dummy.dart';
+import '../data/data_dummy.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
   @override
