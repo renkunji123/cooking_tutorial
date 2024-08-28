@@ -1,5 +1,6 @@
+import 'package:cooking_guide/widgets/category_grid_item.dart';
 import 'package:flutter/material.dart';
-
+import 'data/data_dummy.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
   @override
@@ -14,13 +15,11 @@ class CategoriesScreen extends StatelessWidget {
          childAspectRatio: 3/2,
          crossAxisSpacing: 20,
          mainAxisSpacing: 20,),
-       children: const [
-         Text('1'),
-         Text('2'),
-         Text('3'),
-         Text('4'),
-         Text('5'),
-         Text('6'),
+       children: [
+         for (
+            final category in availableCategories
+         )
+           CategoryGridItem(category: category)
        ],
      )
    );
